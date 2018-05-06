@@ -11,11 +11,12 @@ import {AppComponent} from './app.component';
 export class AppModule {
   constructor(private injector: Injector) {
     console.log('in AppModule ctor');
-    const signaturePadElement = createCustomElement(AppComponent, {injector});
-    customElements.define('signature-pad', signaturePadElement);
   }
 
   ngDoBootstrap() {
+    const signaturePadElement = createCustomElement(AppComponent, {injector: this.injector});
+    customElements.define('signature-pad', signaturePadElement);
+
   }
 }
 

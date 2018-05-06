@@ -79,6 +79,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * APPLICATION IMPORTS
  */
 
-import './build/document-register-element.js';
-// import '@webcomponents/custom-elements/custom-elements.min';
+//import './build/document-register-element.js';
+import '@webcomponents/custom-elements/src/native-shim.js';
 
